@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Valentine's Day</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="message-page">
+  <!-- Darkened background image. The filter will be removed once the message finishes. -->
+  <div id="background-overlay"></div>
+
+  <!-- Floating hearts specifically for the message page -->
+  <div class="decor-hearts"></div>
+
+  <!-- A simple banner to reinforce the theme -->
+  <div class="i-love-you">I love you</div>
+
+
+  <!-- Teleprompter window: a simple scrolling window that shows
+       three lines at a time. The contents will be swapped via
+       JavaScript to create a teleprompter effect. -->
+  <div class="teleprompter">
+    <div id="teleprompter-content" class="teleprompter-content"></div>
+  </div>
+
+  <!-- This section is hidden until the crawl finishes. It reveals the entire
+       message along with a final greeting. -->
+  <div id="full-message" class="full-message">
+    <h2>Happy Valentine's Day</h2>
+    <!-- The full message paragraph is injected via message_script.js -->
+  </div>
+
+  <script src="message_script.js"></script>
+</body>
+</html>
